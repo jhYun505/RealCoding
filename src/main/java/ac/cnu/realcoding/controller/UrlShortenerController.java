@@ -40,7 +40,7 @@ public class UrlShortenerController {
         }
         Mono<Integer> f0 = fib(n-1);
         Mono<Integer> f1 = fib(n-2);
-        return Mono.zip(f0, f1, (n0, n1) -> n0+ n1);
+        return Mono.zip(f0, f1, (n0, n1) -> n0 + n1);
 
 
     }
